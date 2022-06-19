@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap');
+
+:root {
+    --white: #F9F9F9;
+    --white-200: #EBE9EA;
+    --gray: #474747;
+    --black-light: #181818;
+}
+
+* {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--white);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 75%;
+    margin-left: 12.5%;
+    justify-content: center;
+}
+
+.d-flex {
+    display: flex;
+}
+
+
+
+#promo-bar, footer {
+    display: flex;
+    width: 100%;
+    height: 60px;
+    background-color: var(--black-light);
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+}
+
+nav {
+    display: flex;
+    width: 100%;
+    height: 60px;
+    background-color: var(--white);
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-text {
+    color: var(--black-light);
+    font-weight: 600;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.banner{
+    height: 378px;
+}
+
+.banner-image{
+    background-image: url("../images/wallpaper.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 378px;
+    filter: brightness(50%);
+}
+
+
+.banner-title {
+    display: block;
+    position: relative;
+    bottom: 270px;
+    color: var(--white);
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.banner-subtitle {
+    width: 460px;
+    display: block;
+    position: relative;
+    bottom: 210px;
+    color: var(--white);
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.products{
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.header-products {
+    margin: 58px 0;
+    text-align: center;
+}
+
+.header-products-title{
+    color: var(--black-light);
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.header-products-subtitle{
+    color: var(--gray);
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.product{
+    width: 300px;
+    height: 302px;
+    background-color: var(--white-200);
+    justify-content: center;
+    margin-bottom: 39px;
+}
+
+.product-anchor {
+    width: 100%;
+    height: 302px;
+}
+
+.product-image {
+    margin: 20% 0;
+    width: 100%;
+}
+
+footer {
+    margin-top: 100px;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    .banner-title {
+        font-size: 28px;
+    }
+
+    .banner-subtitle {
+        font-size: 16px;
+        width: 100%;
+    }
+
+    footer {
+        margin-top: 10px;
+    }
+}
